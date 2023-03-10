@@ -1,0 +1,19 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"baseUrl": "./src",
+		"paths": {
+			"@components/*": ["components/*"],
+			"@data/*": ["data/*"],
+			"@utils/*": ["utils/*"],
+			"@hooks/*": ["hooks/*"],
+			"@layout/*": ["layout/*"],
+			"@context/*": ["context/*"],
+			"@screens/*": ["screens/*"],
+			"@helpers": ["helpers/index.ts"],
+			"@types": ["types/index.ts"]
+		}
+	},
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules"]
+}
